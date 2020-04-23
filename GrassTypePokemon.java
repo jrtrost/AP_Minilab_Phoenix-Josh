@@ -1,7 +1,7 @@
  
 
 public class GrassTypePokemon extends Pokemon {
-	public static final String type = "Cupcakes";
+	public static final String type = "GrassTypePokemon";
 	public enum KeyType {combo, pokemontype, name, lvl};
 	public static KeyType key = KeyType.combo;
 	private String name;
