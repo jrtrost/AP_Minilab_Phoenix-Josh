@@ -46,7 +46,7 @@ public class FireTypePokemon extends Pokemon {
 			    new FireTypePokemon("Infernape", 72, "Fire"),
 			    new FireTypePokemon("Arcanine", 75, "Fire"),
 			    new FireTypePokemon("Talonflame", 92, "Fire"),
-			    new FireTypePokemon("Flareon", 18, "Fire"),
+			    new FireTypePokemon("Flareon", 27, "Fire"),
 			    new FireTypePokemon("Typhlosion", 77, "Fire"),
 			    new FireTypePokemon("Cinderace", 85, "Fire"),
 			    new FireTypePokemon("Volcarona", 97, "Fire"),
