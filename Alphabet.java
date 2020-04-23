@@ -1,5 +1,5 @@
  
-public class Alphabet extends Generics {
+public class Alphabet extends Pokemon {
 	public static final String type = "Alphabet";
 	private static final int size = 26;
 	public enum KeyType {combo, letter};
@@ -37,9 +37,9 @@ public class Alphabet extends Generics {
 	/*
 	 * upper case alphabet array
 	 */
-	public static Generics[] alphabetData() 
+	public static Pokemon[] alphabetData() 
 	{	
-		Generics[] alphabet = new Alphabet[Alphabet.size];
+		Pokemon[] alphabet = new Alphabet[Alphabet.size];
 		for (int i = 0; i < Alphabet.size; i++)
 		{
 			alphabet[i] = new Alphabet( (char)('A' + i) );
@@ -52,8 +52,8 @@ public class Alphabet extends Generics {
 	 */
 	public static void main(String[] args)
 	{
-		Generics[] ad = alphabetData();
-		for(Generics a : ad)
+		Pokemon[] ad = alphabetData();
+		for(Pokemon a : ad)
 			ConsoleMethods.print("" + a);
 	}
 	
