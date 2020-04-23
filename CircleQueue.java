@@ -164,7 +164,7 @@ public class CircleQueue
   
   /**
    * Performs insertion sort based off of the contents of object
-   */
+   
   public void insertionSort() {	
 	
 	//two nodes needed for insertion sort indexes
@@ -205,7 +205,7 @@ public class CircleQueue
     } 
     
   } 
-  
+  */
   public void selectionSort() {
 	  LinkedList node1 = headNode;
 	  LinkedList node2 = (node1 == null) ? null : node1.getNext();
