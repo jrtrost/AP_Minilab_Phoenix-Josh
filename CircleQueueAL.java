@@ -128,7 +128,7 @@ public class CircleQueueAL
 		 ArrayList<Object> sorted = new ArrayList<Object>;
 		 Object hold = unsorted.get(0);
 		 String text;
-		 int x = 0, delete, size = unsorted.size();
+		 int x = 0, move, size = unsorted.size();
 		 
 		 for(x = 0; x < size; x++)
 		 {
@@ -137,7 +137,7 @@ public class CircleQueueAL
 			 if(unsorted.get(x+1).toString().compareTo(text) > 0)
 			 {
 				 hold = unsorted.get(x+1);
-				 delete = x+1;
+				 move = x+1;
 			 }
 		 }
 		 
