@@ -71,23 +71,26 @@ public class CircleQueueDriver {
 		CircleQueueDriver trial = new CircleQueueDriver();
 		
 		//add different types of objects to the same opaque queue
-		trial.addCQueue(Animal.animalData());
-		trial.addCQueue(Cupcakes.cupCakeData());
+		trial.addCQueue(FireTypePokemon.FireTypePokemonData());
+		trial.addCQueue(WaterTypePokemon.WaterTypePokemonData());
+		trial.addCQueue(GrassTypePokemon.GrassTypePokemonData());
 		trial.addCQueue(Alphabet.alphabetData());		
 		//display queue objects in queue order
 		trial.showCQueue();
 		
 		//sort queue objects by specific element within the object and display in sort order
 		System.out.println("Selection sort:");
-		Animal.key = Animal.KeyType.name;
-		Cupcakes.key = Cupcakes.KeyType.flavor;
+		FireTypePokemon.key = FireTypePokemon.KeyType.name;
+		WaterTypePokemon.key = WaterTypePokemon.KeyType.name;
+		GrassTypePokemon.key = GrassTypePokemon.KeyType.name;
 		Alphabet.key = Alphabet.KeyType.letter;
 		trial.cqueue.insertionSort();
 		trial.showCQueue();
 
 		//display queue objects
-		Animal.key = Animal.KeyType.combo;
-		Cupcakes.key = Cupcakes.KeyType.combo;
+		FireTypePokemon.key = FireTypePokemon.KeyType.combo;
+		WaterTypePokemon.key = WaterTypePokemon.KeyType.combo;
+		GrassTypePokemon.key = GrassTypePokemon.KeyType.combo;
 		Alphabet.key = Alphabet.KeyType.combo;
 		trial.showCQueue();
 		
