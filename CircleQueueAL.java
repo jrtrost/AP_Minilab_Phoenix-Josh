@@ -5,7 +5,7 @@ public class CircleQueueAL
 	private Object head;
 	private Object tail;
 	private Object current;
-	private ArrayList array; 
+	private ArrayList<Object> array; 
 	private int index;
 	// turn circle queue into an arraylist
 	
@@ -124,7 +124,24 @@ public class CircleQueueAL
 	 
 	 public void insertionSort()
 	 {
+		 ArrayList<Object> unsorted = array;
+		 ArrayList<Object> sorted = new ArrayList<Object>;
+		 Object hold = unsorted.get(0);
+		 String text;
+		 int x = 0, delete, size = unsorted.size();
 		 
+		 for(x = 0; x < size; x++)
+		 {
+			 // not sure
+			 text = hold.toString();
+			 if(unsorted.get(x+1).toString().compareTo(text) > 0)
+			 {
+				 hold = unsorted.get(x+1);
+				 delete = x+1;
+			 }
+		 }
+		 
+		 while ( slot1.getObject().toString().compareTo(keyText) > 0 )
 	 }
 	 
 	 public void selectionSort()
