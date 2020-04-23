@@ -88,7 +88,24 @@ public class CircleQueueAL
 	public void add(Object obj)
 	{
 		array.add(obj);
+		tail = obj;
+	}
+	
+	public Object delete()
+	{
+		int last = array.size() - 1;
+		Object deleted = null;
 		
+		if(array.size() != 0)
+		{
+			deleted = array.get(0);
+			array.remove(0);
+			
+			head = array.get(0);
+			tail = array.get(last);
+		}
+		
+		return deleted;
 	}
 	
 	public static void main()
