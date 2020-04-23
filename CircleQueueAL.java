@@ -2,9 +2,9 @@ import java.util.ArrayList;
 
 public class CircleQueueAL 
 {
-	/*private LinkedList head;
-	private LinkedList tail;
-	private LinkedList current;*/
+	private Object head;
+	private Object tail;
+	private Object current;
 	private ArrayList array; 
 	private int index;
 	// turn circle queue into an arraylist
@@ -12,9 +12,9 @@ public class CircleQueueAL
 	public CircleQueueAL()
 	{
 		array.clear();
-		/*head = null;
+		head = null;
 		tail = null;
-		current = null;*/
+		current = null;
 	}
 	
 	public Object getFirst()
@@ -23,7 +23,10 @@ public class CircleQueueAL
 		if(array.size() == 0)
 			first = null;
 		else
+		{
 			first = array.get(0);
+			head = first;
+		}
 		
 		return first;
 	}
@@ -36,20 +39,26 @@ public class CircleQueueAL
 		if(array.size() == 0)
 			last = null;
 		else
+		{
 			last = array.get(temp);
+			tail = last;
+		}
 		
 		return last;
 	}
 	
 	public Object getCurrent()
 	{
-		Object current;
+		Object now;
 		if(array.size() == 0)
-			current = null;
+			now = null;
 		else
-			current = array.get(index);
+		{
+			now = array.get(index);
+			current = now;
+		}
 		
-		return current;
+		return now;
 	}
 	
 	public void setNext()
@@ -59,6 +68,7 @@ public class CircleQueueAL
 		if(index != max)
 		{
 			index++;
+			current = array.get(index);
 		}
 		else
 			System.out.println("You are at the end of the circle queue / array, cannot move forward.");
@@ -69,6 +79,7 @@ public class CircleQueueAL
 		if(index != 0)
 		{
 			index--;
+			current = array.get(index);
 		}
 		else
 			System.out.println("You are at the start of the circle queue / array, can't go to previous.");
@@ -76,6 +87,7 @@ public class CircleQueueAL
 	
 	public void add(Object obj)
 	{
+		array.add(obj);
 		
 	}
 	
