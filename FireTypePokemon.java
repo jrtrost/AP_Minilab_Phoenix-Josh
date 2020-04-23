@@ -41,15 +41,15 @@ public class FireTypePokemon extends Pokemon {
 	
 	public static Pokemon[] FireTypePokemonData() {// fire type pokemon
 		Pokemon[] cc = { 
-				new FireTypePokemon("Red", 4, "Red Velvet"),
-			    new FireTypePokemon("Orange", 5, "Orange"),
-			    new FireTypePokemon("Yellow", 6, "Lemon"),
-			    new FireTypePokemon("Green", 7, "Apple"),
-			    new FireTypePokemon("Blue", 8, "Blueberry"),
-			    new FireTypePokemon("Purple", 9, "Blackberry"),
-			    new FireTypePokemon("Pink", 10, "Strawberry"),
-			    new FireTypePokemon("Tan", 11, "Vanilla"),
-			    new FireTypePokemon("Brown", 12, "Chocolate"),
+				new FireTypePokemon("Blaziken", 7, "Fire"),
+			    new FireTypePokemon("Charizard", 47, "Fire"),
+			    new FireTypePokemon("Infernape", 72, "Fire"),
+			    new FireTypePokemon("Arcanine", 75, "Fire"),
+			    new FireTypePokemon("Talonflame", 92, "Fire"),
+			    new FireTypePokemon("Flareon", 18, "Fire"),
+			    new FireTypePokemon("Typhlosion", 77, "Fire"),
+			    new FireTypePokemon("Cinderace", 85, "Fire"),
+			    new FireTypePokemon("Volcarona", 97, "Fire"),
 		};
 		return cc;
 	}
