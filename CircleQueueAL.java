@@ -121,6 +121,16 @@ public class CircleQueueAL
 	    
 	    return output;
 	  }
+	 
+	 public void insertionSort()
+	 {
+		 
+	 }
+	 
+	 public void selectionSort()
+	 {
+		 
+	 }
 }
 
 
