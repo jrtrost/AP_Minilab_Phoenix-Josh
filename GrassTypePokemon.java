@@ -41,15 +41,15 @@ public class GrassTypePokemon extends Pokemon {
 	
 	public static Pokemon[] GrassTypePokemonData() {
 		Pokemon[] cc = { 
-				new GrassTypePokemon("Red", 4, "Red Velvet"),
-			    new GrassTypePokemon("Orange", 5, "Orange"),
-			    new GrassTypePokemon("Yellow", 6, "Lemon"),
-			    new GrassTypePokemon("Green", 7, "Apple"),
-			    new GrassTypePokemon("Blue", 8, "Blueberry"),
-			    new GrassTypePokemon("Purple", 9, "Blackberry"),
-			    new GrassTypePokemon("Pink", 10, "Strawberry"),
-			    new GrassTypePokemon("Tan", 11, "Vanilla"),
-			    new GrassTypePokemon("Brown", 12, "Chocolate"),
+				new GrassTypePokemon("Kartana ", 30, "Grass"),
+			    new GrassTypePokemon("Tangela ", 5, "Grass"),
+			    new GrassTypePokemon("Leafeon ", 23, "Grass"),
+			    new GrassTypePokemon("Bounsweet", 62, "Grass"),
+			    new GrassTypePokemon("Chesnaught ", 33, "Grass"),
+			    new GrassTypePokemon("Cherubi ", 97, "Grass"),
+			    new GrassTypePokemon("Venusaur ", 41, "Grass"),
+			    new GrassTypePokemon("Skiddo ", 15, "Grass"),
+			    new GrassTypePokemon("Celebi ", 12, "Grass"),
 		};
 		return cc;
 	}
