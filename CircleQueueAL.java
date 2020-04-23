@@ -52,6 +52,33 @@ public class CircleQueueAL
 		return current;
 	}
 	
+	public void setNext()
+	{
+		int max;
+		max = array.size() - 1;
+		if(index != max)
+		{
+			index++;
+		}
+		else
+			System.out.println("You are at the end of the circle queue / array, cannot move forward.");
+	}
+	
+	public void setPrev()
+	{
+		if(index != 0)
+		{
+			index--;
+		}
+		else
+			System.out.println("You are at the start of the circle queue / array, can't go to previous.");
+	}
+	
+	public void add(Object obj)
+	{
+		
+	}
+	
 	public static void main()
 	{
 		ArrayList<Object> array = new ArrayList<Object>();
