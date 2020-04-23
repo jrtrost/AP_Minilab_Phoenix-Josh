@@ -29,7 +29,15 @@ public class CircleQueueAL
 	
 	public Object getLast()
 	{
-	
+		Object last;
+		int temp;
+		temp = array.size() - 1;
+		if(array.size() == 0)
+			last = null;
+		else
+			last = array.get(temp);
+		
+		return last;
 	}
 	
 	public static void main()
