@@ -86,7 +86,7 @@ public class CircleQueueDriver {
 		Alphabet.key = Alphabet.KeyType.letter;
 		trial.cqueue.insertionSort();
 		trial.showCQueue();
-
+		//
 		//display queue objects
 		FireTypePokemon.key = FireTypePokemon.KeyType.combo;
 		WaterTypePokemon.key = WaterTypePokemon.KeyType.combo;
