@@ -108,12 +108,19 @@ public class CircleQueueAL
 		return deleted;
 	}
 	
-	public static void main()
-	{
-		ArrayList<Object> array = new ArrayList<Object>();
-		array.add(headNode.getObject());
-		
-	}
+	 public String toString()
+	  {
+	    String output = "[";
+	    int size = array.size();
+	    int x;
+	    
+	    for(x = 0; x < size; x++)
+	    {
+	    	output +="("+array.get(x)+"), ";
+	    }
+	    
+	    return output;
+	  }
 }
 
 
