@@ -1,6 +1,6 @@
  
 
-public class WaterTypePokemon extends Pokemon {
+public class GrassTypePokemon extends Pokemon {
 	public static final String type = "Cupcakes";
 	public enum KeyType {combo, pokemontype, name, lvl};
 	public static KeyType key = KeyType.combo;
@@ -8,7 +8,7 @@ public class WaterTypePokemon extends Pokemon {
 	private int lvl;
 	private String pokemontype;
 	
-	WaterTypePokemon(String name, int lvl, String pokemontype)
+	GrassTypePokemon(String name, int lvl, String pokemontype)
 	{
 		this.setType(type);
 		this.name = name;
@@ -39,24 +39,24 @@ public class WaterTypePokemon extends Pokemon {
 		return output;
 	}
 	
-	public static Pokemon[] WaterTypePokemonData() {
+	public static Pokemon[] GrassTypePokemonData() {
 		Pokemon[] cc = { 
-				new WaterTypePokemon("Red", 4, "Red Velvet"),
-			    new WaterTypePokemon("Orange", 5, "Orange"),
-			    new WaterTypePokemon("Yellow", 6, "Lemon"),
-			    new WaterTypePokemon("Green", 7, "Apple"),
-			    new WaterTypePokemon("Blue", 8, "Blueberry"),
-			    new WaterTypePokemon("Purple", 9, "Blackberry"),
-			    new WaterTypePokemon("Pink", 10, "Strawberry"),
-			    new WaterTypePokemon("Tan", 11, "Vanilla"),
-			    new WaterTypePokemon("Brown", 12, "Chocolate"),
+				new GrassTypePokemon("Red", 4, "Red Velvet"),
+			    new GrassTypePokemon("Orange", 5, "Orange"),
+			    new GrassTypePokemon("Yellow", 6, "Lemon"),
+			    new GrassTypePokemon("Green", 7, "Apple"),
+			    new GrassTypePokemon("Blue", 8, "Blueberry"),
+			    new GrassTypePokemon("Purple", 9, "Blackberry"),
+			    new GrassTypePokemon("Pink", 10, "Strawberry"),
+			    new GrassTypePokemon("Tan", 11, "Vanilla"),
+			    new GrassTypePokemon("Brown", 12, "Chocolate"),
 		};
 		return cc;
 	}
 	
 	public static void main(String[] args)
 	{
-		Pokemon[] cc = WaterTypePokemonData();
+		Pokemon[] cc = GrassTypePokemonData();
 		for(int i = 0; i < cc.length; i++)
 			System.out.println(cc[i]);
 	}
