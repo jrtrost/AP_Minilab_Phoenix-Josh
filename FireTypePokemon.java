@@ -39,7 +39,7 @@ public class FireTypePokemon extends Pokemon {
 		return output;
 	}
 	
-	public static Pokemon[] FireTypePokemonData() {
+	public static Pokemon[] FireTypePokemonData() {// fire type pokemon
 		Pokemon[] cc = { 
 				new FireTypePokemon("Red", 4, "Red Velvet"),
 			    new FireTypePokemon("Orange", 5, "Orange"),
