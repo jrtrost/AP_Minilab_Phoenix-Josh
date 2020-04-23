@@ -48,7 +48,7 @@ public class FireTypePokemon extends Pokemon {
 			    new FireTypePokemon("Talonflame", 92, "Fire"),
 			    new FireTypePokemon("Flareon", 27, "Fire"),
 			    new FireTypePokemon("Typhlosion", 77, "Fire"),
-			    new FireTypePokemon("Cinderace", 85, "Fire"),
+			    new FireTypePokemon("Cinderace", 35, "Fire"),
 			    new FireTypePokemon("Volcarona", 97, "Fire"),
 		};
 		return cc;
