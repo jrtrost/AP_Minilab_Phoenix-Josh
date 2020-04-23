@@ -41,15 +41,15 @@ public class WaterTypePokemon extends Pokemon {
 	
 	public static Pokemon[] WaterTypePokemonData() {
 		Pokemon[] cc = { 
-				new WaterTypePokemon("Red", 4, "Red Velvet"),
-			    new WaterTypePokemon("Orange", 5, "Orange"),
-			    new WaterTypePokemon("Yellow", 6, "Lemon"),
-			    new WaterTypePokemon("Green", 7, "Apple"),
-			    new WaterTypePokemon("Blue", 8, "Blueberry"),
-			    new WaterTypePokemon("Purple", 9, "Blackberry"),
-			    new WaterTypePokemon("Pink", 10, "Strawberry"),
-			    new WaterTypePokemon("Tan", 11, "Vanilla"),
-			    new WaterTypePokemon("Brown", 12, "Chocolate"),
+				new WaterTypePokemon("Gyarados", 62, "Water"),
+			    new WaterTypePokemon("Blastoise", 65, "Water"),
+			    new WaterTypePokemon("Swampert", 80, "Water"),
+			    new WaterTypePokemon("Vaporeon", 98, "Water"),
+			    new WaterTypePokemon("Greninja", 53, "Water"),
+			    new WaterTypePokemon("Suicune", 86, "Water"),
+			    new WaterTypePokemon("Kyogre", 42, "Water"),
+			    new WaterTypePokemon("Feraligatr", 49, "Water"),
+			    new WaterTypePokemon("Lapras", 53, "Water"),
 		};
 		return cc;
 	}
