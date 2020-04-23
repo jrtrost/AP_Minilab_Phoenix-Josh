@@ -6,6 +6,7 @@ public class CircleQueueAL
 	private LinkedList tail;
 	private LinkedList current;*/
 	private ArrayList array; 
+	private int index;
 	// turn circle queue into an arraylist
 	
 	public CircleQueueAL()
@@ -38,6 +39,17 @@ public class CircleQueueAL
 			last = array.get(temp);
 		
 		return last;
+	}
+	
+	public Object getCurrent()
+	{
+		Object current;
+		if(array.size() == 0)
+			current = null;
+		else
+			current = array.get(index);
+		
+		return current;
 	}
 	
 	public static void main()
