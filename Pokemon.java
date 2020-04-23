@@ -1,7 +1,7 @@
  
 
-public abstract class Generics {
-	public static final String type = "Generic";
+public abstract class Pokemon {
+	public static final String type = "Pokemon";
 	private String subType;
 
 	protected void setType(String type) {
