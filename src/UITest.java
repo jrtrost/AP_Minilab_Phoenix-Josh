@@ -14,6 +14,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.JButton;
 import javax.swing.JTextPane;
 import java.awt.Font;
+import javax.swing.JScrollPane;
 
 public class UITest extends JFrame {
 
@@ -53,21 +54,9 @@ public class UITest extends JFrame {
         content.setBackground(Color.LIGHT_GRAY);
         getContentPane().setLayout(null);
         
-        JTextPane display = new JTextPane();
-        display.setBackground(Color.BLACK);
-        display.setFont(new Font("Tahoma", Font.PLAIN, 15));
-        display.setForeground(Color.WHITE);
-        display.setEditable(false);
-        display.setBounds(140, 262, 284, 218);
-        getContentPane().add(display);
-        
         // click this
         JButton text = new JButton("CLICK ME");
-        text.addActionListener(new ActionListener() {
-        	public void actionPerformed(ActionEvent e) {
-        		display.setText(CircleQueueDriver.main(null));
-        	}
-        });
+      
         text.setForeground(Color.WHITE);
         text.setBackground(new Color(0, 128, 0));
         text.setFont(new Font("Tahoma", Font.PLAIN, 27));
@@ -134,6 +123,23 @@ public class UITest extends JFrame {
         pic.setIcon(new ImageIcon(image));
         pic.setBounds(0, 0, 1148, 769);
         content.add(pic);
+        
+        JScrollPane scrollPane = new JScrollPane();
+        scrollPane.setBounds(140, 262, 284, 218);
+        getContentPane().add(scrollPane);
+        //
+        JTextPane display = new JTextPane();
+        scrollPane.setViewportView(display);
+        display.setBackground(Color.BLACK);
+        display.setFont(new Font("Tahoma", Font.PLAIN, 15));
+        display.setForeground(Color.WHITE);
+        display.setEditable(false);
+        
+        text.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        		display.setText(CircleQueueDriver.main(null));
+        	}
+        });
         
  
 	}
