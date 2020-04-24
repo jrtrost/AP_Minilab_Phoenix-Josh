@@ -92,6 +92,42 @@ public class UITest extends JFrame {
         lblNewLabel_2.setBounds(670, 269, 327, 39);
         getContentPane().add(lblNewLabel_2);
         
+        JButton btnNewButton = new JButton("GRASS");
+        btnNewButton.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        		display.setText(GrassTypePokemon.main(null));
+        	}
+        });
+        btnNewButton.setForeground(new Color(255, 255, 255));
+        btnNewButton.setBackground(new Color(0, 100, 0));
+        btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 15));
+        btnNewButton.setBounds(167, 81, 85, 21);
+        getContentPane().add(btnNewButton);
+        
+        JButton btnNewButton_1 = new JButton("FIRE");
+        btnNewButton_1.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        		display.setText(FireTypePokemon.main(null));
+        	}
+        });
+        btnNewButton_1.setForeground(new Color(255, 255, 255));
+        btnNewButton_1.setBackground(new Color(255, 0, 0));
+        btnNewButton_1.setFont(new Font("Tahoma", Font.PLAIN, 15));
+        btnNewButton_1.setBounds(262, 81, 85, 21);
+        getContentPane().add(btnNewButton_1);
+        
+        JButton btnNewButton_2 = new JButton("WATER");
+        btnNewButton_2.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        		display.setText(WaterTypePokemon.main(null));
+        	}
+        });
+        btnNewButton_2.setForeground(new Color(255, 255, 255));
+        btnNewButton_2.setBackground(new Color(0, 0, 255));
+        btnNewButton_2.setFont(new Font("Tahoma", Font.PLAIN, 15));
+        btnNewButton_2.setBounds(357, 81, 85, 21);
+        getContentPane().add(btnNewButton_2);
+        
         // JLabel with image  
         JLabel pic = new JLabel("");
         pic.setBackground(Color.WHITE);
