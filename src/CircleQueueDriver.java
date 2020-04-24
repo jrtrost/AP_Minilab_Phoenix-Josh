@@ -64,7 +64,7 @@ public class CircleQueueDriver {
 	/* 
 	 * Illustrate different Objects that can be placed on same Queue
 	 */
-	public static void main(String[] args)
+	public static String main(String[] args)
 	
 	{			
 		//queue
@@ -96,6 +96,8 @@ public class CircleQueueDriver {
 		
 		//delete queue objects
 		trial.deleteCQueue();
+		return trial.toString();
+		
 	}
 	
 }
