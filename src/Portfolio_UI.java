@@ -39,7 +39,7 @@ public class Portfolio_UI extends JFrame {
 		JTextPane text = new JTextPane();
 		text.setText("hello");
 		scrollPane.setViewportView(text);
-		
+		//
 		
 		JButton btnNewButton = new JButton("New button");
 		btnNewButton.addActionListener(new ActionListener() {
