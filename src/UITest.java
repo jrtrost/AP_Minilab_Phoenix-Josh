@@ -61,6 +61,7 @@ public class UITest extends JFrame {
         display.setBounds(140, 262, 284, 218);
         getContentPane().add(display);
         
+        // click this
         JButton text = new JButton("CLICK ME");
         text.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
