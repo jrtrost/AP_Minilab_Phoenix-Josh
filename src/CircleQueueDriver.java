@@ -95,7 +95,7 @@ public class CircleQueueDriver {
 		pokemonqueue.showCQueue();
 		
 		//delete queue objects
-		pokemonqueue.deleteCQueue();
+		//pokemonqueue.deleteCQueue();
 		return pokemonqueue.toString();
 		
 	}
