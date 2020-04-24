@@ -2,9 +2,6 @@ import java.util.ArrayList;
 
 public class CircleQueueAL 
 {
-	private Object head;
-	private Object tail;
-	private Object current;
 	private ArrayList<Object> array; 
 	private int index;
 	// turn circle queue into an arraylist
@@ -12,9 +9,6 @@ public class CircleQueueAL
 	public CircleQueueAL()
 	{
 		array.clear();
-		head = null;
-		tail = null;
-		current = null;
 	}
 	
 	public Object getFirst()
@@ -25,7 +19,6 @@ public class CircleQueueAL
 		else
 		{
 			first = array.get(0);
-			head = first;
 		}
 		
 		return first;
@@ -41,7 +34,6 @@ public class CircleQueueAL
 		else
 		{
 			last = array.get(temp);
-			tail = last;
 		}
 		
 		return last;
@@ -55,7 +47,6 @@ public class CircleQueueAL
 		else
 		{
 			now = array.get(index);
-			current = now;
 		}
 		
 		return now;
@@ -68,7 +59,6 @@ public class CircleQueueAL
 		if(index != max)
 		{
 			index++;
-			current = array.get(index);
 		}
 		else
 			System.out.println("You are at the end of the circle queue / array, cannot move forward.");
@@ -79,7 +69,6 @@ public class CircleQueueAL
 		if(index != 0)
 		{
 			index--;
-			current = array.get(index);
 		}
 		else
 			System.out.println("You are at the start of the circle queue / array, can't go to previous.");
@@ -88,7 +77,6 @@ public class CircleQueueAL
 	public void add(Object obj)
 	{
 		array.add(obj);
-		tail = obj;
 	}
 	
 	public Object delete()
@@ -100,9 +88,6 @@ public class CircleQueueAL
 		{
 			deleted = array.get(0);
 			array.remove(0);
-			
-			head = array.get(0);
-			tail = array.get(last);
 		}
 		
 		return deleted;
@@ -122,26 +107,26 @@ public class CircleQueueAL
 	    return output;
 	  }
 	 
+	 // i think??
 	 public void insertionSort()
 	 {
 		 ArrayList<Object> unsorted = array;
-		 ArrayList<Object> sorted = new ArrayList<Object>;
-		 Object hold = unsorted.get(0);
-		 String text;
-		 int x = 0, move, size = unsorted.size();
+		 int x = unsorted.size(), ind = 1;
+		 String hold = unsorted.get(0).toString();
+		 int temp = ind - 1;
 		 
-		 for(x = 0; x < size; x++)
+		 for(ind = 1; ind < x; ind++)
 		 {
-			 // not sure
-			 text = hold.toString();
-			 if(unsorted.get(x+1).toString().compareTo(text) > 0)
+			 hold = unsorted.get(ind).toString();
+			 temp = ind - 1;
+			 
+			 while(temp >= 0 && unsorted.get(temp).toString().compareTo(hold) > 0)
 			 {
-				 hold = unsorted.get(x+1);
-				 move = x+1;
+				 unsorted.set(temp + 1, unsorted.get(temp));
+				 temp--;
 			 }
+			 unsorted.set(temp+1, hold);
 		 }
-		 
-		 while ( slot1.getObject().toString().compareTo(keyText) > 0 )
 	 }
 	 
 	 public void selectionSort()
