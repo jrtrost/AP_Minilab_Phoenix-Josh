@@ -54,11 +54,17 @@ public class WaterTypePokemon extends Pokemon {
 		return cc;
 	}
 	
-	public static void main(String[] args)
+	public static String main(String[] args)
 	{
 		Pokemon[] cc = WaterTypePokemonData();
+		String all = "";
 		for(int i = 0; i < cc.length; i++)
+		{
 			System.out.println(cc[i]);
+			all = all + "\n" + cc[i];
+		}
+		
+		return all;
 	}
 	
 }
