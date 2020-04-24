@@ -1,16 +1,24 @@
+/**
+ * CircleQueueAL changes CirclceQueue functionality into using an ArrayList
+ * @author     Lucy
+ *
+ */
 import java.util.ArrayList;
 
+// goal: turn circlequeue into an arraylist instead of using linkedlists
 public class CircleQueueAL 
 {
+	// create an arraylist to hold all objects, index is used for what you're "currently" on if necessary
 	private ArrayList<Object> array; 
 	private int index;
-	// turn circle queue into an arraylist
 	
+	// constructor
 	public CircleQueueAL()
 	{
 		array.clear();
 	}
 	
+	// find the first object - first object in arraylist
 	public Object getFirst()
 	{
 		Object first;
@@ -24,6 +32,7 @@ public class CircleQueueAL
 		return first;
 	}
 	
+	// find the last object - last object in arraylist
 	public Object getLast()
 	{
 		Object last;
@@ -39,6 +48,7 @@ public class CircleQueueAL
 		return last;
 	}
 	
+	// based on index, find current object
 	public Object getCurrent()
 	{
 		Object now;
@@ -52,6 +62,7 @@ public class CircleQueueAL
 		return now;
 	}
 	
+	// move to next object, increment index
 	public void setNext()
 	{
 		int max;
@@ -64,6 +75,7 @@ public class CircleQueueAL
 			System.out.println("You are at the end of the circle queue / array, cannot move forward.");
 	}
 	
+	// move to object before, decrement index
 	public void setPrev()
 	{
 		if(index != 0)
@@ -74,14 +86,15 @@ public class CircleQueueAL
 			System.out.println("You are at the start of the circle queue / array, can't go to previous.");
 	}
 	
+	// adding an object to end of arraylist
 	public void add(Object obj)
 	{
 		array.add(obj);
 	}
 	
+	// deleting an object from start of arraylist
 	public Object delete()
 	{
-		int last = array.size() - 1;
 		Object deleted = null;
 		
 		if(array.size() != 0)
@@ -93,6 +106,7 @@ public class CircleQueueAL
 		return deleted;
 	}
 	
+	// toString
 	 public String toString()
 	  {
 	    String output = "[";
@@ -107,7 +121,7 @@ public class CircleQueueAL
 	    return output;
 	  }
 	 
-	 // i think??
+	 // insertion sort 
 	 public void insertionSort()
 	 {
 		 ArrayList<Object> unsorted = array;
@@ -129,6 +143,7 @@ public class CircleQueueAL
 		 }
 	 }
 	 
+	 // selection sort
 	 public void selectionSort()
 	 {
 		 ArrayList<Object> unsorted = array;
