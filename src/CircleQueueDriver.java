@@ -6,8 +6,8 @@
  */
 public class CircleQueueDriver {
 	
-	private CircleQueue cqueue;	// circle queue object
-	private int count; // number of objects in circle queue
+	private static CircleQueue cqueue;	// circle queue object
+	private static int count; // number of objects in circle queue
 
 	/* 
 	 * Circle queue constructor

@@ -39,6 +39,7 @@ public class Portfolio_UI extends JFrame {
 		JTextPane text = new JTextPane();
 		text.setText("hello");
 		scrollPane.setViewportView(text);
+		//
 		
 		JButton btnNewButton = new JButton("New button");
 		btnNewButton.addActionListener(new ActionListener() {
@@ -49,7 +50,7 @@ public class Portfolio_UI extends JFrame {
 		btnNewButton.setBounds(219, 127, 95, 46);
 		panel.add(btnNewButton);
 		
-		
+	
 	}
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
