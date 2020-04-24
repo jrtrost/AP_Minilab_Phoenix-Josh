@@ -92,7 +92,7 @@ public class UITest extends JFrame {
         lblNewLabel_2.setBounds(670, 269, 327, 39);
         getContentPane().add(lblNewLabel_2);
         
-        // JLabel with image 
+        // JLabel with image  
         JLabel pic = new JLabel("");
         pic.setBackground(Color.WHITE);
         pic.setIcon(new ImageIcon(image));
