@@ -81,13 +81,6 @@ public class UITest extends JFrame {
         lblNewLabel_2.setBounds(670, 269, 327, 39);
         getContentPane().add(lblNewLabel_2);
         
-        // JLabel with image  
-        JLabel pic = new JLabel("");
-        pic.setBackground(Color.WHITE);
-        pic.setIcon(new ImageIcon(image));
-        pic.setBounds(0, 0, 1148, 769);
-        content.add(pic);
-        
         JScrollPane scrollPane = new JScrollPane();
         scrollPane.setBounds(140, 262, 284, 218);
         getContentPane().add(scrollPane);
@@ -140,6 +133,13 @@ public class UITest extends JFrame {
         btnNewButton_2.setFont(new Font("Tahoma", Font.PLAIN, 15));
         btnNewButton_2.setBounds(357, 81, 85, 21);
         getContentPane().add(btnNewButton_2);
+        
+        // JLabel with image  
+        JLabel pic = new JLabel("");
+        pic.setBackground(Color.WHITE);
+        pic.setIcon(new ImageIcon(image));
+        pic.setBounds(0, 0, 1148, 769);
+        content.add(pic);
  
 	}
 }
