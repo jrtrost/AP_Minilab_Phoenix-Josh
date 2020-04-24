@@ -57,17 +57,6 @@ public class UITest extends JFrame {
         content.setBackground(new Color(100,100,255));
         content.add(pic);
         
-    	JLabel JMORT = new JLabel("");        
-		JMORT.setBackground(Color.WHITE);
-        java.awt.Image yeet = new ImageIcon("img/JMORT.PNG").getImage();
-        JMORT.setIcon(new ImageIcon(yeet));
-        JMORT.setBounds(377, 111, 128, 128);
-        
-        // Content Panel to add Label and Image
-        //https://docs.oracle.com/javase/tutorial/uiswing/components/rootpane.html
-       
-     
-        content.add(JMORT);
  
 	}
 	
