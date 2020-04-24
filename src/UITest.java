@@ -12,6 +12,8 @@ import javax.swing.JMenuItem;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JButton;
+import javax.swing.JTextPane;
+import java.awt.Font;
 
 public class UITest extends JFrame {
 
@@ -43,21 +45,30 @@ public class UITest extends JFrame {
 	public UITest() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1162, 806);
-		
-		// JLabel with image 
-		JLabel pic = new JLabel("");        
-		pic.setBackground(Color.WHITE);
         java.awt.Image image = new ImageIcon("img/APCS1.PNG").getImage();
-        pic.setIcon(new ImageIcon(image));
-        pic.setBounds(377, 111, 128, 128);
         
         // Content Panel to add Label and Image
         //https://docs.oracle.com/javase/tutorial/uiswing/components/rootpane.html
         Container content = getContentPane();
-        content.setBackground(new Color(100,100,255));
+        content.setBackground(Color.LIGHT_GRAY);
+        getContentPane().setLayout(null);
+        
+        JTextPane txtpnYeet = new JTextPane();
+        txtpnYeet.setBackground(Color.BLACK);
+        txtpnYeet.setFont(new Font("Tahoma", Font.PLAIN, 15));
+        txtpnYeet.setForeground(Color.WHITE);
+        txtpnYeet.setText("yeet");
+        txtpnYeet.setEditable(false);
+        txtpnYeet.setBounds(140, 262, 284, 218);
+        getContentPane().add(txtpnYeet);
+        
+        // JLabel with image 
+        JLabel pic = new JLabel("");
+        pic.setBackground(Color.WHITE);
+        pic.setIcon(new ImageIcon(image));
+        pic.setBounds(0, 0, 1148, 769);
         content.add(pic);
         
  
 	}
-	
 }
