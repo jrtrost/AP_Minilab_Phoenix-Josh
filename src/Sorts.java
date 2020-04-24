@@ -3,7 +3,7 @@
  2. Add 'Selection Sort' to Sorts
 * Do an assessment/report on best Sort in Sorts and cite reasons. 5pts
 
-insertion>selection>bubble in general
+insertion>selection>bubble in general (from Wikipedia)
 selection>insertion>bubble here
 “selection sort must always scan all remaining elements to find the absolute smallest unsorted element”, insertion does not
 Both sorts work similarly but on average insertion is more efficient since it performs better in scenarios where the list is already in order. However, in the scenario presented in Sorts, selection sort was more efficient because it had the lowest number of operations.
