@@ -68,15 +68,15 @@ public class CircleQueueDriver {
 	
 	{			
 		//queue
-		CircleQueueDriver trial = new CircleQueueDriver();
+		CircleQueueDriver pokemonqueue = new CircleQueueDriver();
 		
 		//add different types of objects to the same opaque queue
-		trial.addCQueue(FireTypePokemon.FireTypePokemonData());
-		trial.addCQueue(WaterTypePokemon.WaterTypePokemonData());
-		trial.addCQueue(GrassTypePokemon.GrassTypePokemonData());
-		trial.addCQueue(Alphabet.alphabetData());		
+		pokemonqueue.addCQueue(FireTypePokemon.FireTypePokemonData());
+		pokemonqueue.addCQueue(WaterTypePokemon.WaterTypePokemonData());
+		pokemonqueue.addCQueue(GrassTypePokemon.GrassTypePokemonData());
+		pokemonqueue.addCQueue(Alphabet.alphabetData());		
 		//display queue objects in queue order
-		trial.showCQueue();
+		pokemonqueue.showCQueue();
 		
 		//sort queue objects by specific element within the object and display in sort order
 		System.out.println("Selection sort:");
@@ -84,19 +84,19 @@ public class CircleQueueDriver {
 		WaterTypePokemon.key = WaterTypePokemon.KeyType.name;
 		GrassTypePokemon.key = GrassTypePokemon.KeyType.name;
 		Alphabet.key = Alphabet.KeyType.letter;
-		trial.cqueue.insertionSort();
-		trial.showCQueue();
+		pokemonqueue.cqueue.insertionSort();
+		pokemonqueue.showCQueue();
 		//
 		//display queue objects
 		FireTypePokemon.key = FireTypePokemon.KeyType.combo;
 		WaterTypePokemon.key = WaterTypePokemon.KeyType.combo;
 		GrassTypePokemon.key = GrassTypePokemon.KeyType.combo;
 		Alphabet.key = Alphabet.KeyType.combo;
-		trial.showCQueue();
+		pokemonqueue.showCQueue();
 		
 		//delete queue objects
-		trial.deleteCQueue();
-		return trial.toString();
+		pokemonqueue.deleteCQueue();
+		return pokemonqueue.toString();
 		
 	}
 	
