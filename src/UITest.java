@@ -53,14 +53,25 @@ public class UITest extends JFrame {
         content.setBackground(Color.LIGHT_GRAY);
         getContentPane().setLayout(null);
         
-        JTextPane txtpnYeet = new JTextPane();
-        txtpnYeet.setBackground(Color.BLACK);
-        txtpnYeet.setFont(new Font("Tahoma", Font.PLAIN, 15));
-        txtpnYeet.setForeground(Color.WHITE);
-        txtpnYeet.setText("yeet");
-        txtpnYeet.setEditable(false);
-        txtpnYeet.setBounds(140, 262, 284, 218);
-        getContentPane().add(txtpnYeet);
+        JTextPane display = new JTextPane();
+        display.setBackground(Color.BLACK);
+        display.setFont(new Font("Tahoma", Font.PLAIN, 15));
+        display.setForeground(Color.WHITE);
+        display.setEditable(false);
+        display.setBounds(140, 262, 284, 218);
+        getContentPane().add(display);
+        
+        JButton text = new JButton("CLICK ME");
+        text.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        		display.setText(CircleQueueDriver.main(null));
+        	}
+        });
+        text.setForeground(Color.WHITE);
+        text.setBackground(new Color(0, 128, 0));
+        text.setFont(new Font("Tahoma", Font.PLAIN, 27));
+        text.setBounds(180, 663, 159, 61);
+        getContentPane().add(text);
         
         // JLabel with image 
         JLabel pic = new JLabel("");
